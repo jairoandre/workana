@@ -1,17 +1,3 @@
-.navbar {
-  color: #fff;
-}
-
-.brand--logo {
-  background: #ddd;
-}
-
-.brand--title {
-  color: #fff;
-}
-
-.navbar-inner {
-  min-height: 80px;
-  line-height: 80px;
-  background: #000;
+body {
+  margin-top: 20px;
 }
