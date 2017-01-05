@@ -18,16 +18,12 @@
 
 /* NAVBAR */
 
-
 .navbar--custombg {
-  background: #074722;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px;
+  background: url('../imgs/header.png') repeat-x;
+}
+
+.navbar--custombg--options {
+  background: url('../imgs/header.png') 0 -90px;
 }
 
 .navbar--custom {
@@ -85,8 +81,16 @@
 }
 
 .navbar--item--border {
-  border-right: 1px dashed #fff;
-  line-height: 2px;
+  line-height: 30px;
+  padding: 0 !important;
+}
+
+.border--r, .border--rl {
+  border-right: 2px dotted #1a7b4d;
+}
+
+.border--l, .border--rl {
+  border-left: 2px dotted #0e261b;
 }
 
 .navbar--options {
@@ -95,6 +99,7 @@
   color: #fff;
   font-weight: bold;
   border-bottom: 2px solid hsla(0, 0%, 100%, 0.4);
+  height: 50px;
 }
 
 .nav-justified>li>a {
