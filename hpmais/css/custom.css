@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
   font-family: 'Gotham';
   src: url('../fonts/Gotham-Bold.otf');
@@ -8,21 +10,17 @@
   src: url('../fonts/Humanist-777Bt-Light.otf');
 }
 
+
 .hero-unit {
   padding: 0;
   margin-top: 90px;
 }
 
-.navbar--custom {
-  padding-left: 0;
-  min-height: 90px;
-  height: 90px;
+/* NAVBAR */
+
+.navbar--custombg {
   background: #074722;
-  border: none;
-  border-bottom: 2px solid hsla(0, 0%, 100%, 0.4);
-  box-shadow: none;
-  color: #fff;
-  font-family: 'Gotham';
+  background-image: url('imgs/header.png');
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -30,7 +28,17 @@
   -webkit-background-size: 3px 3px;
   -moz-background-size: 3px 3px;
   background-size: 3px 3px;
+}
 
+.navbar--custom {
+  padding-left: 0;
+  min-height: 90px;
+  height: 90px;
+  border: none;
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.4);
+  box-shadow: none;
+  color: #fff;
+  font-family: 'Gotham';
 }
 
 @media (min-width: 768px) {
@@ -58,40 +66,26 @@
 
 .navbar-brand {
   font-family: 'Gotham';
-  font-size: 25pt;
+  font-size: 20pt;
   line-height: 90px;
 }
 
 .navbar--social {
-  color: #fff;
   text-align: right;
+}
+
+.navbar--social a {
+  color: #fff;
   font-size: 15px;
-}
-
-.navbar-nav--custom {
-  position: absolute;
-  top: 93px;
-}
-
-.navbar--social > i {
   margin-left: 5px;
 }
 
-
-.li--border-r {
+.navbar--item--border {
   border-right: 1px dashed #fff;
   line-height: 2px;
 }
 
-.custom-nav {
-  background: rgba(55, 144, 55, 1);
-  background: -moz-linear-gradient(top, rgba(65,66,65,1) 0%, rgba(0,0,0,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(65,66,65,1)), color-stop(100%, rgba(0,0,0,1)));
-  background: -webkit-linear-gradient(top, rgba(65,66,65,1) 0%, rgba(0,0,0,1) 100%);
-  background: -o-linear-gradient(top, rgba(65,66,65,1) 0%, rgba(0,0,0,1) 100%);
-  background: -ms-linear-gradient(top, rgba(65,66,65,1) 0%, rgba(0,0,0,1) 100%);
-  background: linear-gradient(to bottom, rgba(65,66,65,1) 0%, rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414241', endColorstr='#000000', GradientType=0 );
+.navbar--options {
   font-size: 12px;
   white-space: nowrap;
   color: #fff;
@@ -112,6 +106,8 @@
 
 .input--header {
   height: 23px;
+  max-width: 125px;
+  font-size: 12px;
   border-radius: 0;
 }
 
