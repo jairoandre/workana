@@ -18,13 +18,9 @@
 
 /* NAVBAR */
 
-.navbar--custombg {
-  background-image: url('imgs/header.png');
-}
 
-.navbar--custombg1 {
+.navbar--custombg {
   background: #074722;
-  background-image: url('imgs/header.png');
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
   background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -61,6 +57,10 @@
 
 .navbar--custom .navbar-brand--logo {
   padding: 13.5px 0;
+}
+
+.navbar--custom .navbar-brand--title {
+  padding: 28px 0;
 }
 
 .navbar--custom .navbar-brand--fc {
