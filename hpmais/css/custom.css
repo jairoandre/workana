@@ -19,6 +19,10 @@
 /* NAVBAR */
 
 .navbar--custombg {
+  background-image: url('imgs/header.png');
+}
+
+.navbar--custombg1 {
   background: #074722;
   background-image: url('imgs/header.png');
   background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -125,10 +129,12 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40%;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.025) 0, rgba(0,0,0,0.8) 100%);
+  height: 50%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.0025) 0, rgba(0,0,0,0.75) 100%);
   background-repeat: repeat-x;
+  z-index: 9;
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -150,13 +156,14 @@
     margin-right: -10px;
   }
   .carousel-caption {
+    display: block;
     font-family: 'Gotham';
-    font-size: 25px;
+    font-size: 30px;
     left: 10%;
     right: 0;
     padding-bottom: 30px;
     text-align: left;
-    z-index: 2;
+    z-index: 10;
   }
   .carousel-indicators {
     bottom: 20px;
