@@ -13,17 +13,58 @@
 
 .hero-unit {
   padding: 0;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 /* NAVBAR */
 
 .navbar--custombg {
-  background: url('../imgs/header.png') repeat-x;
+  background: url('../imgs/header.png');
 }
 
 .navbar--custombg--options {
   background: url('../imgs/header.png') 0 -90px;
+}
+
+.navbar-right--custom {
+  position: relative;
+  line-height: 90px;
+}
+
+/** HEADER ELEMS **/
+
+.header-social {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  height: 0;
+}
+
+.header-social__a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.header-form {
+}
+
+.header-form__input {
+  height: 23px;
+  max-width: 125px;
+  font-size: 12px;
+  border-radius: 0;
+  color: #000;
+}
+
+.header-form__a {
+  background: rgb(236, 220, 13);
+  height: 23px;
+  line-height: 23px;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 3px;
+  color: #000;
 }
 
 .navbar--custom {
@@ -31,7 +72,6 @@
   min-height: 90px;
   height: 90px;
   border: none;
-  border-bottom: 2px solid hsla(0, 0%, 100%, 0.4);
   box-shadow: none;
   color: #fff;
   font-family: 'Gotham';
@@ -70,36 +110,28 @@
   line-height: 90px;
 }
 
-.navbar--social {
-  text-align: right;
-}
-
-.navbar--social a {
-  color: #fff;
-  font-size: 15px;
-  margin-left: 5px;
-}
-
-.navbar--item--border {
+.navbar-item {
   line-height: 30px;
+  font-size: 15px;
+  font-family: "Gotham";
   padding: 0 !important;
 }
 
 .border--r, .border--rl {
-  border-right: 2px dotted #1a7b4d;
+  border-right: 1px dotted #1a7b4d;
 }
 
 .border--l, .border--rl {
-  border-left: 2px dotted #0e261b;
+  border-left: 1px dotted #0e261b;
 }
 
 .navbar--options {
+  top: 90px;
   font-size: 12px;
   white-space: nowrap;
   color: #fff;
   font-weight: bold;
-  border-bottom: 2px solid hsla(0, 0%, 100%, 0.4);
-  height: 50px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
 }
 
 .nav-justified>li>a {
@@ -112,24 +144,6 @@
   color: rgb(235, 255, 0);
 }
 
-
-.input--header {
-  height: 23px;
-  max-width: 125px;
-  font-size: 12px;
-  border-radius: 0;
-}
-
-.btn--header {
-  background: rgb(236, 220, 13);
-  height: 23px;
-  line-height: 23px;
-  font-weight: bold;
-  border-radius: 0;
-  padding: 0 2px;
-  color: #000;
-}
-
 .carousel--gradient {
   position: absolute;
   bottom: 0;
@@ -140,9 +154,11 @@
   z-index: 9;
 }
 
-
-
 @media screen and (min-width: 768px) {
+  .navbar-options {
+    margin: 10px 0;
+  }
+
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -173,4 +189,31 @@
   .carousel-indicators {
     bottom: 20px;
   }
+}
+
+/* GAMES SECTION */
+
+.container-games {
+  padding: 75px 0;
+  background: url(../imgs/games-bg.jpg)
+}
+
+.register-box {
+  background: url(../imgs/register-bg.jpg);
+  width: 300px;
+  height: 485px;
+}
+
+.register-box__title {
+  color: #fff;
+  text-align: center;
+  padding: 32px 28px 0 28px;
+  font-size: 25px;
+  font-family: "Gotham"
+}
+
+.col--zpadd {
+  padding-left: 1px;
+  padding-right: 1px;
+  margin: 0;
 }
